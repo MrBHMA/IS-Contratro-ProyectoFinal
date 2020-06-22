@@ -2,6 +2,9 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require ('path');
 const morgan = require('morgan');
+const bodyParser = require('body-parser')//
+const method0verride = require('method-override')//
+
 // Initializations
 const app = express();
 // Settings
@@ -16,13 +19,18 @@ app.set('view engine', '.hbs');
 //Middle Ware
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
+app.use(method0verride('_method'))
 //Routes
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/contratos.routes'));
+
 //Global Variables
 
 //static files
 app.use(express.static(path.join(__dirname, 'public' )));
+
 //app.use('/static',express.static('public'))
 
 module.exports = app;

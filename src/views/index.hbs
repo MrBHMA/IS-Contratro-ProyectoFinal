@@ -1,4 +1,5 @@
-
+<title>Inicio</title>
+<div class="container-fluid">
     <div class="Container Cabecera2">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -14,14 +15,14 @@
                 <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="height:35vh;">
               <img src="/img/diapositiva2.jpg" class="d-block w-100" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                   <h5 style="color:black">VISION</h5>
                   <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="height:35vh; width:100%">
               <img src="/img/diapositiva3.jpg" class="d-block w-100" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                   <h5 style="color:black">MISION</h5>
@@ -55,10 +56,13 @@
 
 
                 <div class="p1" id="comp">
-                  <button type="button" class="btn btn-outline-dark col-6"> <i class="fas fa-search-plus"></i> AMPLIAR</button>
-                  <button type="button" class="btn btn-outline-dark col-6" onclick="generar(); location.href= '/contratos/add'"><i class="fas fa-file-pdf"></i> </a>GENERAR</button>
+                  
                     <h5 class="p1">Vista Previa</h5>
                     <embed class="p1" id="comp" src="./pdf/compve.pdf#toolbar=0" type="application/pdf" width="200%" height="200%" />
+                  <div>
+                  <button type="button" class="btn btn-outline-dark col-5 p-2"> <i class="fas fa-search-plus"></i> AMPLIAR</button>
+                  <button type="button" class="btn btn-outline-dark col-5 p-2" onclick="generar(); location.href= '/contratos/add'"><i class="fas fa-file-pdf"></i> </a>GENERAR</button>
+                  </div>
 
                 </div>
                 <div class="p2" id="comp2">
@@ -116,3 +120,4 @@
           }
         }
     </script>
+</div>

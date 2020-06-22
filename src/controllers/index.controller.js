@@ -11,5 +11,8 @@ indexCtrl.renderAbout =(req,res)=> {
 indexCtrl.renderContact = (req,res) =>{
   res.render('contact')
 };
+indexCtrl.renderGenerar = (req,res) =>{
+  res.render('generarContrato')
+}
 
 module.exports= indexCtrl;
